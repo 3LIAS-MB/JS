@@ -14,7 +14,7 @@
 // -> Comentarios y otros: los comentarios y otros elementos como las
 // declaraciones doctype en cabecera de los documentos HTML generan nodos
 
-"--------------------28) Metodos de Selección de elementos---------------------------------"
+"-------------------- 28) Metodos de Selección de elementos ---------------------------------"
 
 /*getElementById(id): Este método permite seleccionar un elemento HTML por su atributo id. Devuelve una referencia al primer elemento con el id especificado. Por ejemplo*/
 
@@ -41,20 +41,18 @@ document.write(parrafo[0]) // [object HTMLParagraphElement] -> Es un objeto
 //----------------------------
 
 /*querySelector(selectors): Permite seleccionar un elemento HTML usando selectores CSS.
-Devuelve el primer elemento que coincide con el selector especificado. Por ejemplo:*/
+Devuelve EL PRIMER ELEMENTO que coincide con el selector especificado. Por ejemplo:*/
 
 // Selecciona una clase [object HTMLParagraphElement]
 const elemento = document.querySelector('.claseEspecifica'); 
 //----------------------------
 
-/*querySelectorAll(selectors): Similar a querySelector, pero devuelve una colección NodeList de 
-todos los elementos que coinciden con el selector. Puedes acceder a los elementos por índice.*/
-
-const parrafo1 = document.querySelectorAll(""); 
+/*querySelectorAll(selectors): Todos los elementos que coinciden con el selector CSS*/
+const parrafo1 = document.querySelectorAll(".claseEspecifica");
 // [object NodeList] -> Lista de nodos. Puedo acceder
 // a cualquiera de esos nodos por el indice "parrafo1[0]"
 document.write(parrafo1) 
-//----------------------------
+
 "------------------------------- 29) METODOS DE CREACIÓN ----------------------------------"
 // createElement: Crea un nuevo elemento HTML.
 const newElement = document.createElement('div');
@@ -63,7 +61,13 @@ const newElement = document.createElement('div');
 // createTextNode: Crea un nuevo nodo de texto.
 const newText = document.createTextNode('Hello, World!');
 
+"------------------------------- 30) METODOS DE EVENTOS ----------------------------------"
+// addEventListener: Registra un controlador de eventos.
+// Reemplaza a onClick en JavaScript
+element.addEventListener('click', () => { console.log('Clicked!'); });
 
+// removeEventListener: Elimina un controlador de eventos.
+element.removeEventListener('click', handleClick);
 
 "-------------------29) Metodos para Definir, obtener y Eliminar atributos.-----------------"
 
