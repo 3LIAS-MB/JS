@@ -70,8 +70,9 @@ document.write(resultado); // [1, "Roberto", 4, 5]
 // Agregando sin eliminar/remplazar
 var resultado = nombres.splice(-1, 0, "Roberto");
 document.write(resultado); // [Roberto, 1, 2, 3, 4, 5]
-// -----------------------------------------------------------------------------------------------------------------------
-// -----------------------ACCESORES: DEVUELVE UN NUEVO ARRAY, EL ORIGINAL NO SE MODIFICA----------------------------------
+
+//--------------------------------------------------------------------------------------------------
+// -----------ACCESORES: DEVUELVE UN NUEVO ARRAY, EL ORIGINAL NO SE MODIFICA------------------------
 
 // - join() - Se utiliza en arrays para combinar todos los elementos del array en una sola cadena de texto.
 // Este método toma un argumento opcional que especifica el separador que se utilizará entre cada elemento
@@ -94,8 +95,8 @@ document.write(resultado); // '1, 5, 2, 4'
 
 // - Metodos ya vistos en cadenas: tostring(), indexof (), lastIndexof (), includes ()
 
-// -----------------------------------------------------------------------------------------------------------------------
-// DE REPETICIÓN: Estos metodos funcionan como un bucle-------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
+// -------------- DE REPETICIÓN: Estos metodos funcionan como un bucle -------------------
 
 // - filter() - Se utiliza en arrays para crear un nuevo array que contiene todos los elementos del array original que
 // cumplen con cierta condición definida por una función de prueba. En otras palabras, filter() se utiliza para filtrar
@@ -110,4 +111,4 @@ const numerosPares = numeros.filter(numero => numero % 2 === 0);
 console.log(numerosPares); // Imprime [2, 4, 6]
 
 // ForEach - Es lo mismo que el "filter" pero no te deja poner una condicion
-//------------------------------------------------------------------------------------------------------------------------- 
+//------------------------------------------------------------------------------------------------------ 
